@@ -1,0 +1,214 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #8ACDEB;
+    height: 100vh;
+}
+
+.box {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 200px;
+    width: 300px;
+    background: #fff;
+    background: linear-gradient(146.5deg, #fff 50%, #f3f3f3 50%);
+    height: 165px;
+    border-radius: 59% 41% 25% 26% / 0% 0% 55% 55%;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    right: -22%;
+    top: 2%;
+    border-right: 16px solid #f4f4f4;
+    border-top: 16px solid #f4f4f4;
+    border-bottom: 16px solid #f4f4f4;
+    z-index: -1;
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 300px;
+    height: 25px;
+    background-color: #f9f9f9;
+    bottom: -25px;
+    border-radius: 50% 50% 14% 14% / 0% 0% 90% 90%;
+}
+
+.shadow {
+    position: absolute;
+    height: 0.0001px;
+    width: 300px;
+    background-color: transparent;
+    bottom: -29px;
+    box-shadow: 0 0px 12px 2px black;
+}
+
+.steam1 {
+    position: absolute;
+    left: 20%;
+    animation-delay: 1s;
+    animation-name: steam1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-radius: 50%;
+}
+
+.steam2 {
+    position: absolute;
+    left: 65%;
+    animation-delay: 2.6s;
+    animation-name: steam2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-radius: 50%;
+}
+
+.steam3 {
+    position: absolute;
+    left: 40%;
+    animation-delay: 1.8s;
+    animation-name: steam3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-radius: 50%;
+}
+
+.steam4 {
+    position: absolute;
+    left: 45%;
+    animation-delay: 3.4s;
+    animation-name: steam4;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-radius: 50%;
+}
+
+@keyframes steam1 {
+    0% {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: transparent;
+        top: 0px;
+        opacity: 0.4;
+    }
+    60% {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        left: 15%;
+        background-color: #fff;
+        top: -100px;
+        opacity: 0.4;
+    }
+    100% {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        left: 10%;
+        top: -160px;
+        opacity: 0;
+    }
+}
+
+@keyframes steam2 {
+    0% {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: transparent;
+        top: 0px;
+        opacity: 0.4;
+    }
+    60% {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        left: 60%;
+        background-color: #fff;
+        top: -100px;
+        opacity: 0.4;
+    }
+    100% {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        left: 55%;
+        top: -160px;
+        opacity: 0;
+    }
+}
+
+@keyframes steam3 {
+    0% {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: transparent;
+        top: 0px;
+        opacity: 0.4;
+    }
+    60% {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        left: 35%;
+        background-color: #fff;
+        top: -100px;
+        opacity: 0.4;
+    }
+    100% {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        left: 30%;
+        top: -160px;
+        opacity: 0;
+    }
+}
+
+@keyframes steam4 {
+    0% {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: transparent;
+        top: 0px;
+        opacity: 0.4;
+    }
+    60% {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        left: 40%;
+        background-color: #fff;
+        top: -100px;
+        opacity: 0.4;
+    }
+    100% {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        left: 35%;
+        top: -160px;
+        opacity: 0;
+    }
+}
